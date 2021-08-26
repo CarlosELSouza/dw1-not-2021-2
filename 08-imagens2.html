@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /*
+            Regras iniciadas com # aplicam-se apenas aos elementos HTML com o id correspodente
+        */
+        #logo {
+            /*Alterar a largura da imagem*/
+            width: 300px;
+        }
+        #icone {
+            /*height: 100%;*/
+        }
+        #publi {
+            /* Alinha o texto e a imagem no centro*/
+            text-align: center;
+            background-image: url('img/light-carbonfiber.png');
+            padding: 30px;
+            border: 2px solid white;
+        }
+        /* Regra que só vai afetar a figurecaption que está dentro da figure id publi */
+        #publi figcaption {
+            font-family: "Calibri";
+            font-style: italic;
+        }
+        /* Regra que só vai afetar a img que está dentro da figure id publi*/
+        #publi img {
+            /*borda arredondada */
+            border-radius: 16px;
+        }
+
+        body {
+            /* Colocar uma imagem de fundo na página, se for menor, ela será repetida (ladrilhamento)*/
+            background-image: url('img/metal.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!--
+        <img>: usada para exibir imagens na página
+        Atributos:
+        - src: Indica a fonte (source) da imagem, ou em outras palavras onde está o arquivo de imagem que deve ser exibido
+        - alt: especifica um texto alternativo que será exibido no lugar da imagem caso esta não possa ser carregada.
+        - id: identificador único
+    -->
+    <img id="logo" src="img/apptiva-logo.png" alt="Logotipo da empresa Apptiva">
+
+    <img id="icone"src="img/apptiva-icon.png" alt="Icone da empresa Apptiva">
+    <!--
+        <figure>: representa uma figura, formada por uma imagem <img> e uma legenda <figcaption>
+    -->
+    <figure id="publi">
+        <!--
+            aria-label (pode ir em qualquer elemento) dita a forma de descrever o conteúdo para o uso de leitores de tela para deficientes visuais
+
+            tittle é o que aparece quando passa o mouse
+        -->
+        <img src="img/distance-education-1000px.jpg" alt="Educação a Distância" aria-label="Menina de cabelos longos escrevendo com um lápis em um caderno, tendo à sua frente um tablet e um notebook" title="Imagem meramente ilustrativa">
+        <figcaption>Estudando com a Apptiva, seu sucesso é garantido!</figcaption>
+
+        <!--
+            Regras CSS também podem ser aplicadas a um elemento HTML usando o atributo style
+        -->
+
+        <img src="img/svg-logo.svg" alt="Logotipo no formato svg" style="width: 1000px;">
+    </figure>
+</body>
+</html>
