@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas (ou responsivas)</title>
+</head>
+<body>
+    <!--
+        A tag picture permite especificar vários arquivos diferentes para uma mesma imagem, adaptando-se á largura da janela do navegador.
+    -->
+    <picture>
+        <!--
+            As medidas nas quais o tamanho da imagem muda, são chamados BREAKPOINTS.
+        -->
+
+        <!--
+            Quando a tela tiver até 630px, será exibida a imagem de 300px
+        -->
+        <source media="(max-width: 630px)" srcset="img/distance-education-300px.jpg" type="image/jpeg">
+        <!--
+            Quando tiver mais de 630px, e menos de 1030px, será exibidaa a de 600px
+        -->
+        <source media="(max-width: 1030px)" srcset="img/distance-education-600px.jpg" type="image/jpeg">
+        <!--
+            Quando tiver mais de 1030px, será exibida a imagem original (default)
+        -->
+        <img src="img/distance-education-1000px.jpg" alt="Imagem de 1000px">
+
+    </picture>
+</body>
+</html>
