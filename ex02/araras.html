@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araras</title>
+</head>
+<body>
+    <picture>
+    <source media="(max-width: 630px)" srcset="ex02/araras-p.jpg" type="image/jpg">
+        
+        <!-- Quando a tela tiver mais 630px de largura e
+            menos de 1030px, será carregada/exibida a 
+            imagem de 600px -->
+        <source media="(max-width: 1030px)" srcset="ex02/araras-m.jpg" type="image/jpg">
+        
+        <!-- Quando a tela tiver mais de 1030px, será
+            carregada a imagem de 1000px ("DEFAULT")-->
+        <img src="ex02/araras-g.jpg" alt="Imagem de 1000px">
+    </picture>
+</body>
+</html>
