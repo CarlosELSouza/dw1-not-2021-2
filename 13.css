@@ -1,0 +1,38 @@
+
+/*todos os elementos */
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+    /* Retira os espaçamento da borda das células */
+    border-collapse: collapse;
+
+}
+/* Regras para células de cabeçalho e de conteúdo*/
+td, th {
+    /* Borda*/
+    border: 1px solid navy;
+    /* Espaçamento interno da célula */
+    padding: 6px;
+}
+
+th{
+    /* Cor de fundo para as células de cabeçalho */
+    background-color: lightblue;
+}
+
+.dir {
+    text-align: right;
+}
+
+.ctr {
+    /* Alinha o conteúdo no centro */
+    text-align: center;
+}
+
+tfoot tr {
+    /*só os tr do rodapé */
+    font-weight: bold;
+    background-color: lightgray;
+}

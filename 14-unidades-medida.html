@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            Unidades de medida em css
+            1) Unidades absolutas
+                - px (pixel): corresponde a um ponto de iluminação na tela, ou, quando isso não puder ser determinado (no papel, por exemplo), equivale a 1/96 de uma polegada (1 polegada = 2,54cm). No seu tamanho, portanto, depende da resolução da tela.
+                - pt (point): medida usada para o tamanho de fontes. Equivale a 1/72 de uma polegada.
+                - cm (centimetro): para impressão
+                - mm (milimetro): para impressão
+                - in (polegadas): para impressão
+
+            2) Unidades relativas
+                - %: sempre será calculado em relação as medidas do elemento pai
+                - em: usado para fontes. Significa 100% do tamanho da fonte do elemento pai
+
+        */
+        #box1 {
+            background-color: aliceblue;
+            border: 1px solid blue;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            font-size: 20pt;
+        }
+
+        #box2 {
+            background-color: lightyellow;
+            border: 3px dotted orange;
+            width: 6cm;
+            height: 20mm;
+        }
+
+        #pai1 {
+            background-color: yellowgreen;
+            border:2px dashed green ;
+            text-align: center;
+            width: 500px;
+            height: 300px;
+        }
+
+        #filho1 {
+            background-color: pink;
+            border: 1px solid darkred;
+            width: 50%;
+            height: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        Texto 1
+    </div>
+
+    <div id="box2">
+        Este quadro impresso em papel terá 6cm de largura por 20mm (2cm) de altura.
+
+    </div>
+
+    <div id="pai1">
+        Elemento pai
+        <div id="filho1">
+            Elemento filho
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
